@@ -339,14 +339,6 @@ var Bonzi = (function () {
 													socket.emit("command", {list: ["ban", _this2.id]})
 												}
 											},
-											nofuckoff: {
-												name: function() {
-													return admin ? "🔨 No Fuck Off" : ""
-												},
-												callback: function() {
-													socket.emit("command", {list: ["nofuckoff", _this2.id]})
-												}
-											},
 										},
 									},
 								},
@@ -356,7 +348,7 @@ var Bonzi = (function () {
 					}),
                 (this.needsUpdate = !1);
                 this.runSingleEvent([{ type: "anim", anim: "surf_intro", ticks: 30 }]);
-                setTimeout(function () {var jump_off_sfx = new Audio("./sfx/agents/jump_off.mp3"); jump_off_sfx.play()}, 3000);
+                setTimeout(function () {var jump_off_sfx = new Audio("./sfx/agents/jump_off.mp3"); jump_off_sfx.play()}, 1500);
         }
         return (
             _createClass(Bonzi, [
